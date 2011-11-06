@@ -1,3 +1,3 @@
-OBJECTS = even_odd.exe
+OBJECTS = sum_cube.exe
 include ../../GNU_makefile_template
-LOCFLAGS = -I../even_odd
+LOCFLAGS = -I../sum_cube
