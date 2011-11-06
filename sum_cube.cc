@@ -17,7 +17,7 @@ int f(int len)
     {
       temp=cal%10;
       sum+=temp*temp*temp;
-      cal=cal/10;
+      cal/=10;
     }
     sum+=cal*cal*cal;
     if (sum == i)
