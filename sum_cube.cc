@@ -13,13 +13,12 @@ int f(int len)
   {
     sum=0;
     cal=i;
-    while (cal>10)
+    while (cal)
     {
       temp=cal%10;
       sum+=temp*temp*temp;
       cal/=10;
     }
-    sum+=cal*cal*cal;
     if (sum == i)
       cout<<sum<<endl;
   }
