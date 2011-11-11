@@ -4,8 +4,10 @@
 
 using namespace std;
 
-int f(int len)
+int* f(int len)
 {
+  int *result=new int[len];
+  int *nav=result;
   int sum=0;
   int temp=0;
   int cal=0;
@@ -20,13 +22,24 @@ int f(int len)
       cal/=10;
     }
     if (sum == i)
-      cout<<sum<<endl;
+      *nav++=sum;
   }
-  return 1;
+  return result;
 }
 
 int main() 
 {
-  f(20000);
+  int *toPrint=f(20000);
+  while(*toPrint)
+  {
+    cout<<*toPrint++<<endl;
+  }
+  /*
+     1
+     153
+     370
+     371
+     407
+     */
   return 0;
 }
