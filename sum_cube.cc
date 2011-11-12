@@ -10,7 +10,6 @@ int* f(int len)
   int *result=new int[len];
   int *nav=result;
   int sum=0;
-  int temp=0;
   int cal=0;
   for (int i=1;i<=len;i++)
   {
