@@ -1,5 +1,6 @@
 #include"stdio.h"
 #include"stdlib.h"
+#include"math.h"
 #include<iostream>
 
 using namespace std;
@@ -17,8 +18,7 @@ int* f(int len)
     cal=i;
     while (cal)
     {
-      temp=cal%10;
-      sum+=temp*temp*temp;
+      sum+=pow((cal%10),3);
       cal/=10;
     }
     if (sum == i)
